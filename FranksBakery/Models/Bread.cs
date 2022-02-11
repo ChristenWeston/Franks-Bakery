@@ -6,7 +6,7 @@ namespace Bread
   public class BreadStuff
   {
     public int breadQuantity {get; set;}
-    public int breadCost {get; set;}
+    public double breadCost {get; set;}
 
     //Constructor
     public BreadStuff(string quantity)
@@ -15,6 +15,16 @@ namespace Bread
       Int32.TryParse(quantity, out quantityToInt);
       breadQuantity = quantityToInt;
       //breadCost will equal a function that calculates the cost
+    }
+
+    public static void BreadCost(int breadQuantity)
+    {
+      //int breadCost = 0;
+      if (breadQuantity <3)
+      {
+        breadCost = breadQuantity * 5.00;
+      }
+      else if ()
     }
   }
 }
