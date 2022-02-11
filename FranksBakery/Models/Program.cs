@@ -8,7 +8,7 @@ namespace MainProgram
   {
     public static void Main()
     {
-      Console.WriteLine("Welcome to Frank's Bakery!");
+      Console.WriteLine("Welcome to Frank's Bakery! Bread is $5.00 a loaf and pastry is $3.50 each");
       //Here is the price for bread and pastry
       Console.Write("How many loaves of bread would you like?: ");
       string loavesOfBread = Console.ReadLine();
