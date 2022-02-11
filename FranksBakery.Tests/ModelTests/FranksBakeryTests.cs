@@ -76,5 +76,13 @@ namespace FranksBakery.Tests
       double pastriesCost = 9.00;
       Assert.AreEqual(new5Pastry.pastryCost, pastriesCost);
     }
+
+    [TestMethod]
+    public void FranksBakery_PastryPriceReturnsCorrectPriceFor6Pastries()
+    {
+      PastryStuff new6Pastry = new PastryStuff("6");
+      double pastriesCost = 10.00;
+      Assert.AreEqual(new6Pastry.pastryCost, pastriesCost);
+    }
   }
 }
