@@ -17,7 +17,7 @@ namespace MainProgram
 
       BreadStuff breadOrder = new BreadStuff(loavesOfBread);
       PastryStuff pastryOrder = new PastryStuff(numberOfPastries);
-
+      Console.WriteLine(pastryOrder.pastryCost);
     }
   }
 }
