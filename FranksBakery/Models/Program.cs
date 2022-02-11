@@ -16,7 +16,7 @@ namespace MainProgram
       string numberOfPastries = Console.ReadLine();
 
       BreadStuff breadOrder = new BreadStuff(loavesOfBread);
-      Console.WriteLine(breadOrder.breadQuantity);
+      PastryStuff pastryOrder = new PastryStuff(numberOfPastries);
 
     }
   }
