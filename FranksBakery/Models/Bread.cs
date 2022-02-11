@@ -14,17 +14,23 @@ namespace Bread
       int quantityToInt;
       Int32.TryParse(quantity, out quantityToInt);
       breadQuantity = quantityToInt;
-      //breadCost will equal a function that calculates the cost
+      breadCost = BreadCost(breadQuantity);
     }
 
-    public static void BreadCost(int breadQuantity)
+    public double BreadCost(int breadQuantity)
     {
       //int breadCost = 0;
       if (breadQuantity <3)
       {
         breadCost = breadQuantity * 5.00;
+        Console.WriteLine("breadcost is: " + breadCost);
       }
-      else if ()
+      else if (breadQuantity >= 3)
+      {
+        breadCost = (breadQuantity - (breadQuantity / 3)) * 5.00;
+        Console.WriteLine("breadcost is: " + breadCost);
+      }
+      return breadCost;
     }
   }
 }
