@@ -1,12 +1,13 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Bread;
+using Pastry;
 using System;
 
 namespace FranksBakery.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class BreadTests
   {
 
     [TestMethod]
@@ -31,6 +32,17 @@ namespace FranksBakery.Tests
       double result = 10.00;
       Assert.AreEqual(new5LoafBread.breadCost, result);
     }
+  }
 
+  [TestClass]
+  public class PastryTests
+  {
+
+    [TestMethod]
+    public void FranksBakery_PastryStuffCreatesNewPastryStuff()
+    {
+      PastryStuff newPastry = new PastryStuff("1");
+      Assert.AreEqual(typeof(PastryStuff), newPastry.GetType());
+    }
   }
 }
