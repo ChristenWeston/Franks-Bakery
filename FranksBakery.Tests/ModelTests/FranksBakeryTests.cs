@@ -44,5 +44,13 @@ namespace FranksBakery.Tests
       PastryStuff newPastry = new PastryStuff("1");
       Assert.AreEqual(typeof(PastryStuff), newPastry.GetType());
     }
+
+    [TestMethod]
+    public void FranksBakery_PastryPriceReturnsCorrectPriceFor1Pastry()
+    {
+      PastryStuff new1Pastry = new PastryStuff("1");
+      double pastryCost = 2.00;
+      Assert.AreEqual(new1Pastry.pastryCost, pastryCost);
+    }
   }
 }
