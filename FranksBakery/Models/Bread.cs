@@ -19,7 +19,6 @@ namespace Bread
 
     public double BreadCost(int breadQuantity)
     {
-      //int breadCost = 0;
       if (breadQuantity <3)
       {
         breadCost = breadQuantity * 5.00;
