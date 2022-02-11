@@ -24,5 +24,13 @@ namespace FranksBakery.Tests
       Assert.AreEqual(new5LoafBread.breadCost, result);
     }
 
+    [TestMethod]
+    public void FranksBakery_BreadPriceReturnsCorrectPriceFor2Loaves()
+    {
+      BreadStuff new5LoafBread = new BreadStuff("2");
+      double result = 10.00;
+      Assert.AreEqual(new5LoafBread.breadCost, result);
+    }
+
   }
 }
