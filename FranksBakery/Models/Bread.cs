@@ -9,10 +9,11 @@ namespace Bread
     public int breadCost {get; set;}
 
     //Constructor
-    public Breadstuff(string quantity)
+    public BreadStuff(string quantity)
     {
       int quantityToInt;
       Int32.TryParse(quantity, out quantityToInt);
+      breadQuantity = quantityToInt;
       //breadCost will equal a function that calculates the cost
     }
   }
