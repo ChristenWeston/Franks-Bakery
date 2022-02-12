@@ -97,5 +97,13 @@ namespace FranksBakery.Tests
       OrderStuff newOrder = new OrderStuff(5.00, 10.00);
       Assert.AreEqual(typeof(OrderStuff), newOrder.GetType());
     }
+
+    [TestMethod]
+    public void FranksBakery_OrderStuffReturnsCorrectTotal()
+    {
+      OrderStuff newBreadAndPastryOrder = new OrderStuff(10.00, 17.00);
+      double orderCost = 27.00;
+      Assert.AreEqual(newBreadAndPastryOrder.orderCost, orderCost);
+    }
   }
 }
