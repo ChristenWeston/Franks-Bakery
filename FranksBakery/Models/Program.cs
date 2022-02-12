@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Bread;
 using Pastry;
+using Order;
 
 namespace MainProgram
 {
@@ -17,10 +18,11 @@ namespace MainProgram
 
       BreadStuff breadOrder = new BreadStuff(loavesOfBread);
       PastryStuff pastryOrder = new PastryStuff(numberOfPastries);
+      OrderStuff newOrder = new OrderStuff(pastryOrder.pastryCost, breadOrder.breadCost);
+
       Console.WriteLine("Price for bread: ....... {0:C}", breadOrder.breadCost);
       Console.WriteLine("Price for pastries: .... {0:C}", pastryOrder.pastryCost);
-      double totalCost = breadOrder.breadCost + pastryOrder.pastryCost;
-      Console.WriteLine("Total: ................. {0:C}", totalCost);
+      Console.WriteLine("Total: ................. {0:C}", newOrder.orderCost);
     }
   }
 }
