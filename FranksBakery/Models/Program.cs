@@ -17,7 +17,10 @@ namespace MainProgram
 
       BreadStuff breadOrder = new BreadStuff(loavesOfBread);
       PastryStuff pastryOrder = new PastryStuff(numberOfPastries);
-      Console.WriteLine(pastryOrder.pastryCost);
+      Console.WriteLine("Price for bread: ....... {0:C}", breadOrder.breadCost);
+      Console.WriteLine("Price for pastries: .... {0:C}", pastryOrder.pastryCost);
+      double totalCost = breadOrder.breadCost + pastryOrder.pastryCost;
+      Console.WriteLine("Total: ................. {0:C}", totalCost);
     }
   }
 }
