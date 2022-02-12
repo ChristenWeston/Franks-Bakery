@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Bread;
 using Pastry;
+using Order;
 using System;
 
 namespace FranksBakery.Tests
@@ -83,6 +84,18 @@ namespace FranksBakery.Tests
       PastryStuff new6Pastry = new PastryStuff("6");
       double pastriesCost = 10.00;
       Assert.AreEqual(new6Pastry.pastryCost, pastriesCost);
+    }
+  }
+
+  [TestClass]
+  public class OrderTests
+  {
+
+    [TestMethod]
+    public void FranksBakery_OrderStuffCreatesNewOrderStuff()
+    {
+      OrderStuff newOrder = new OrderStuff(5.00, 10.00);
+      Assert.AreEqual(typeof(OrderStuff), newOrder.GetType());
     }
   }
 }
