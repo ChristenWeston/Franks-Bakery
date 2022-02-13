@@ -9,7 +9,6 @@ namespace Order
   {
     public double orderCost {get; set;}
 
-
     public OrderStuff(double pastryCost, double breadCost)
     {
       orderCost = pastryCost + breadCost;
